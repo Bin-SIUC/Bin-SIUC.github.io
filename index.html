@@ -1,119 +1,48 @@
-# Build full-English index.html from the extracted CV data
-html = """<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bin Dong | Academic Homepage</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;line-height:1.65;color:#0f172a;background:#fff}
-    header{padding:56px 20px;text-align:center;background:#f6f7f9}
-    nav a{margin:0 10px;text-decoration:none;color:#0366d6}
-    .container{max-width:980px;margin:0 auto;padding:20px}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px}
-    @media (min-width:960px){.grid{grid-template-columns:2fr 1fr}}
-    .card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-    h1{margin:0 0 8px}
-    h2{margin:0 0 8px;font-size:1.25rem}
-    h3{margin:4px 0 6px;font-size:1.05rem;color:#475569}
-    ul{padding-left:18px;margin:8px 0}
-    li{margin:6px 0}
-    footer{padding:28px;text-align:center;color:#666;border-top:1px solid #e5e7eb}
-    a{color:#0366d6}
-  </style>
+  <title>Home | Bin Dong</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Bin Dong</h1>
     <p>Assistant Professor, School of Mechanical, Aerospace, and Materials Engineering, Southern Illinois University Carbondale</p>
-    <p>Research: Symmetry & Modal Analysis · Nonlinear Vibrations · Physics-Informed Neural Networks · Wave Energy PTO · Additive Manufacturing</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#pubs">Publications</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#grants">Grants</a>
-      <a href="#service">Service</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    
+<nav>
+  <a href="index.html">Home</a>
+  <a href="publications.html">Publications</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="research.html">Research</a>
+  <a href="grants.html">Grants</a>
+  <a href="service.html">Service</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
   </header>
-
   <main class="container">
-    <div class="grid">
-      <section id="about" class="card">
-        <h2>About Me</h2>
-        <p>I am an Assistant Professor at Southern Illinois University Carbondale since 2023. I received my Ph.D. in Mechanical Engineering from Virginia Tech in 2019 under the supervision of Prof. Robert G. Parker, and was a Postdoctoral Research Associate at the University of Utah from 2019–2022. My research integrates group theory, nonlinear dynamics, and machine learning to analyze and control complex mechanical systems, with applications in vibration analysis, energy harvesting, and additive manufacturing.</p>
-      </section>
-      <aside class="card">
-        <h3>Contact Info</h3>
-        <ul>
-          <li>Email: <a href="mailto:bin.dong@siu.edu">bin.dong@siu.edu</a></li>
-          <li>Phone: 618-453-8737</li>
-          <li>Office: Engineering E-025, 1230 Lincoln Drive, Carbondale, IL 62901</li>
-          <li><a href="https://engineering.siu.edu/me/faculty-staff/faculty/dong.php" target="_blank">SIU Faculty Page</a></li>
-        </ul>
-        <h3>Education</h3>
-        <ul>
-          <li>Ph.D. Mechanical Engineering, Virginia Tech, 2019</li>
-          <li>B.S. Mechanical Engineering, Dalian University of Technology, 2013</li>
-        </ul>
-      </aside>
-    </div>
+    
+<section class="card">
+  <h2>About</h2>
+  <p>I am an Assistant Professor at Southern Illinois University Carbondale (since 2023). I received my Ph.D. in Mechanical Engineering from Virginia Tech in 2019 (Advisor: Robert G. Parker) and was a Postdoctoral Research Associate at the University of Utah (2019–2022).</p>
+  <p>My research integrates group theory, nonlinear vibrations, and machine learning (e.g., physics-informed neural networks) to analyze and control complex mechanical systems. Current interests include symmetry-based modal analysis for multi-stage/periodic structures, wave energy power take-off mechanisms, and symmetry-aware design and topology optimization for additive manufacturing.</p>
+</section>
+<section class="card">
+  <h2>Research Interests</h2>
+  <ul>
+    <li>Group-theoretic methods in mechanics; symmetry & modal analysis</li>
+    <li>Nonlinear vibrations; spatio-temporal symmetry; PT symmetry</li>
+    <li>Physics-Informed Neural Networks (PINNs) for system identification</li>
+    <li>Wave energy converters (PTO mechanisms)</li>
+    <li>Additive manufacturing and topology optimization</li>
+  </ul>
+  <small class="muted">See <a href="research.html">Research</a> and <a href="publications.html">Publications</a> for details.</small>
+</section>
 
-    <section id="pubs" class="card">
-      <h2>Selected Publications</h2>
-      <ul>
-        <li>Dong, B. &amp; Parker, R.G., <em>Sector-model subspace iteration for vibration of multi-stage, cyclically symmetric systems</em>, <strong>Journal of Sound and Vibration</strong>, 2023.</li>
-        <li>Dong, B. &amp; Parker, R.G., <em>Vibration of multi-stage systems with arbitrary symmetry of component stages: a group theory approach</em>, <strong>Journal of Sound and Vibration</strong>, 2022.</li>
-        <li>Dong, B. &amp; Parker, R.G., <em>Vibration of general symmetric systems using group theory</em>, <strong>Journal of Sound and Vibration</strong>, 2021.</li>
-        <li>Dong, B., Shi, C. &amp; Parker, R.G., <em>PT-symmetric dynamics of counter-moving gyroscopic mechanical systems</em>, <strong>AIP Advances</strong>, 2021.</li>
-        <li>Wang, C., Dong, B. &amp; Parker, R.G., <em>Impact of planet mesh phasing on the vibration of three-dimensional planetary gears</em>, <strong>Mechanism and Machine Theory</strong>, 2021.</li>
-        <li>Dong, B. &amp; Parker, R.G., <em>Modal properties of cyclically symmetric systems with central components vibrating as 3D rigid bodies</em>, <strong>Journal of Sound and Vibration</strong>, 2018.</li>
-        <li>Venkatapathi, S., Dong, B., &amp; Hin, C., <em>Temperature effects on the energy bandgap and conductivity effective masses of charge carriers in lead telluride</em>, <strong>Journal of Applied Physics</strong>, 2014.</li>
-      </ul>
-    </section>
-
-    <section id="teaching" class="card">
-      <h2>Teaching</h2>
-      <ul>
-        <li>ME 336 System Dynamics and Control (2024–2025)</li>
-        <li>ME 309 Mechanical Analysis and Design (2023–2025)</li>
-        <li>ME EN 2030 Dynamics (University of Utah, 2022)</li>
-        <li>ME EN 5510/6510 Applied Finite Element Analysis (University of Utah, 2022)</li>
-        <li>Graduate Course: Fundamentals of Linear & Nonlinear Vibrations (SIU, 2025)</li>
-      </ul>
-    </section>
-
-    <section id="grants" class="card">
-      <h2>Research Grants</h2>
-      <ul>
-        <li><strong>Funded:</strong> Power Take-Off Mechanism Design and Characterization for Boosting Ocean Wave Energy Harvesting Efficiency, AEI, SIU, $25,000 (PI, 2024–2025)</li>
-        <li><strong>Pending/Submitted:</strong> ERI (NSF), Symmetry-driven PINNs (SIU Foundation), MATH-DT (NSF), Sustainability Council of SIU</li>
-      </ul>
-    </section>
-
-    <section id="service" class="card">
-      <h2>Service & Awards</h2>
-      <ul>
-        <li>Outstanding Teaching Award, SIU MAME, 2024</li>
-        <li>Outstanding Service Award, ASME IDETC, 2022</li>
-        <li>Guest Editor, Special Issue on Symmetry and Asymmetry in Mechanical Engineering, MDPI Symmetry, 2024</li>
-        <li>Faculty Secretary, MAME, SIU, 2023–present</li>
-        <li>Faculty Advisor, SAE Formula Racing & SAE Saluki Baja Teams, SIU, 2023–present</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:bin.dong@siu.edu">bin.dong@siu.edu</a> · Phone: 618-453-8737</p>
-      <p>Google Scholar · ORCID · GitHub</p>
-    </section>
   </main>
-
   <footer>© <span id="y"></span> Bin Dong · GitHub Pages</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script src="script.js"></script>
 </body>
 </html>
-"""
-with open("/mnt/data/index_en.html","w",encoding="utf-8") as f:
-    f.write(html)
-"/mnt/data/index_en.html"

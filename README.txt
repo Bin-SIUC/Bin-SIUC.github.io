@@ -1,0 +1,1 @@
+Upload all files to the root of your GitHub Pages repo (username.github.io).
